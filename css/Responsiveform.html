@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+input[type=text],select
+{
+  width: 40%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email],select
+{
+  width: 40%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  resize: vertical;
+}
+label 
+{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.container /* starts gradient from top of the form*/
+{
+  border-radius: 5px;
+  height: 180px;
+  background-color: rgb(255, 255, 255); 
+  background-image: linear-gradient(rgb(177, 177, 177), rgb(255, 255, 255));
+  padding: 20px;
+  
+}
+/* ID gradient */
+.gradient 
+{
+  border-radius: 5px;
+  height: 100px;
+  background-color: rgb(255, 255, 255); 
+  background-image: linear-gradient(rgb(177, 177, 177), rgb(255, 255, 255));
+  padding: 20px;
+}
+.botgrad
+{
+  border-radius: 5px;
+  height: 80px;
+  background-color: rgb(255, 255, 255); 
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+  padding: 20px;
+}
+
+.botgrad2
+{
+  border-radius: 5px;
+  height: 50px;
+  background-color: rgb(255, 255, 255); 
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+  padding: 20px;
+}
+/* password part */
+input[type="password"]
+{
+
+  width: 40%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  resize: vertical;
+  -webkit-text-security: disc;
+  
+}
+
+input[type=submit] 
+{
+  border-radius: 5px;
+  background-image: linear-gradient(rgb(21, 255, 0), rgb(7, 119, 12));
+  padding: 12px 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover 
+{
+  background-color: rgb(45, 150, 31); 
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(29, 248, 0));
+}
+
+
+.col-25 
+{
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+.col-75 
+{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) 
+{
+  .col-25, .col-75, input[type=submit] 
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+   </style>
+</head>
+<body>
+
+<body>
+<div class="container">
+  <h2>CREATE AN ACCOUNT</h2>
+  <form action="image/welcomeX.gif">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email"placeholder="Your email here">
+          <p style="color:rgb(122, 122, 122)";>we will not sell or spam your email address</p>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="GENDER">Gender</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="Gender">
+          <option value="--select one--">--select one--</option>
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+          <option value="OTHER">OTHER</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="COUNTRY">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="Country" name="Coutry">
+          <option value="--select one--">--select one--</option>
+          <option value="India">India</option>
+          <option value="Japan">Japan</option>
+          <option value="Norway">Norway</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Brazil">Brazil</option>
+          <option value="USA">USA</option>
+          <option value="United kingdom">United Kingdom</option>
+        </select>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="Postal Code">Postal Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text"name="Postal Code"placeholder="eg:-403726">
+        <div class="postgrad">
+      </div>
+    </div>
+    </div>
+    <!-- dummypart -->
+    <div class="botgrad2">
+    <div class="row">
+      <div class="col-25">      
+      </div>
+      <div class="col-75">
+      </div>
+    </div>
+    </div>
+    <body>
+      <h3>SELECT AN ID AND PASSWORD</h3>
+      <div class="gradient">
+      <div class="row">
+        <div class="col-25">
+          <label for="User Id">User Id</label>
+        </div>
+        <div class="col-75">
+          <input type="text"name="User id">
+          <p style="color:rgb(122, 122, 122)";>5 characters minimum</p>
+        </div>
+      </div>
+      <!-- PASSWORD -->
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*.{5,}" required>
+          <p style="color:rgb(122, 122, 122)";>Minimum of 5 characters.Should have min one special character eg-secr3t</p>
+        </div>
+      </div>
+      <!-- confirm password -->
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Confirm Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*.{5,}" required>
+        </div>
+      </div>    
+      <div class="row">   
+          </div>
+          <div class="botgrad">
+          <div class="col-75">
+        <input type="submit" value="CREATE ACCOUNT">  |  <a href="Responsiveform.html">Cancel</a>
+      </div>
+      </div>
+      </div>
+      </body>
+</body>
+</html>
+</body>
+</html>

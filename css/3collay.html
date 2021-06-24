@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            margin: 1px;
+            padding: 1px;
+            border: 50px rgb(10, 33, 59) solid;
+            
+        }
+        header
+        {
+            border-bottom: 1px solid black;
+        }
+        footer
+        {
+            border-top: 1px solid black;
+        }
+        header, footer
+        {
+            background-color: rgb(0, 255, 255);
+            height: 20vh;
+        }
+        .left
+        {
+            float: left;
+            width: 20%;
+            height: 60vh;
+            background-color: rgb(60, 255, 0);
+        }
+        .middle
+        {
+            float: left;
+            width: 60%;
+            height: 60vh;
+            background-color: rgb(245, 179, 242);
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            
+        }
+        .right
+        {
+            float: left;
+            width: 20%;
+            height: 60vh;
+            background-color: rgb(60, 255, 0);
+        }
+        .main::after
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p{
+            padding: 30px;
+            font-size: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><p>Three column layout</p></header>
+        <div class="main">
+            <section>
+                <aside class="left"></aside>
+                <aside class="middle"></aside>
+                <aside class="right"></aside>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>

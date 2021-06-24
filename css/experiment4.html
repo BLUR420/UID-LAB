@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+input[type=text],select
+{
+  width: 40%;
+  padding: 8px;
+  border-radius: 3px;
+ 
+}
+
+label 
+{
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+.container 
+{
+  border-radius: 5px;
+  height: 180px;
+  padding: 20px;
+  
+}
+
+
+input[type=submit] 
+{
+  border-radius: 5px;
+  background-color: grey;
+  padding: 12px 20px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.col-25 
+{
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-75 
+{
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+}
+
+
+.col-post
+{
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) 
+{
+  .col-25, .col-75, input[type=submit] 
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+        <div class="container">
+          <h2>CREATE AN ACCOUNT</h2>
+          <form action="image/welcomeX.gif">
+            <div class="row">
+              <div class="col-25">
+                <label for="AddressLine1">Address Line 1</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="Addressline1" name="Addressline1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="line2">Line 2</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="line2" name="line2">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="line3">Line 3</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="line3" name="line3">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="town">Town</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="town" name="town">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="postcode">Postcode</label>
+                </div>
+                <div class="col-post">
+                  <input type="text" id="postcode" name="postcode">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="date">Date</label>
+                </div>
+                <div class="col-post">
+                  <input type="date" id="date" name="date">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="time">Time</label>
+                </div>
+                <div class="col-post">
+                  <input type="time" id="time" name="time">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">   
+                <div class="col-75">
+              <input type="submit" value="SUBMIT"> 
+              </div>
+</body>
+</html>
