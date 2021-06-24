@@ -1,18 +1,19 @@
+
 <!doctype html>
 <html>
  <head>
-  <meta charset="utf-8">
-  <title>Scorpion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fox</title>
   <style>
   #text {
     width: 300px;
-    background-color: cyan;
+    background-color: yellow;
     height: 200px;
     overflow: auto;
     margin-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
-    border: 6px dashed rgb(255, 0, 0);
+    border: 6px dashed orange;
   }
 
   .important {
@@ -22,7 +23,7 @@
 
   .picture {
     width: 310px;
-    height: 150px;
+    height: 100px;
     border: 6px inset orange;
   }
 
@@ -30,26 +31,44 @@
     margin: auto;
     width: 400px;
     background-color: lightyellow;
-    border: 3px solid red;
+    border: 3px solid brown;
     padding: 10px;
   }
   
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-  </style>
+  @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
  </head>
  <body>
 <div id="main">
-<h1>Scorpion</h1>
+<h1>Fox</h1>
 
-<img class="picture" src="image/scorpion.jpg">
+<img class="picture" src="image/fox.jpg">
 
 <div id="text">
  <p>
- <span class="important">Most people know scorpions can inflict a painful sting, but not much else about the amazing arthropods.</span> scorpions glow under ultraviolet light. A scorpion's cuticle, or skin, absorbs ultraviolet light and reflects it as visible light. This makes the work of scorpion researchers considerably easier.
+ <span class="important">Fox is a common name for many species of carnivorous mammals belonging to the Canidae family</span>. Foxes are small to medium-sized canids (slightly smaller than the median-sized domestic dog), characterized by possessing a long narrow snout, and a bushy tail (or brush).
  </p>
 
  <p>
-<span class="important">Scorpions are arthropods that belong to the class Arachnida, the arachnids. The arachnids include spiders, harvestmen, ticks and mites</span>.Most arthropods have relatively brief lives compared to other animals. Many insects live just weeks or months. Mayflies last just a few days. But scorpions are among the arthropods with the longest lifespans. In the wild, scorpions typically live from two to ten years. In captivity, scorpions have lived as long as 25 years. 
+<span class="important">Members of about 37 species are referred to as foxes, of which only 12 species actually belong to the Vulpes genus of 'true foxes'</span>. By far the most common and widespread species of fox is the red fox (Vulpes vulpes), although various species are found on almost every continent. The presence of fox-like carnivores all over the globe has led to their appearance in both popular culture and folklore in many cultures around the world (see also Foxes in culture). The gray fox is one of only two canine species known to climb trees; the other is the raccoon dog.
  </p>
 </div>
 
